@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, ChangeEvent } from "react";
+import { validateEmail } from "@/utils/validate";
 import Header from "@/components/Header";
 import ContentLayout from "@/components/ContentLayout";
 import SlidedownModal from "@/components/SlidedownModal";
@@ -25,6 +26,12 @@ function SignUp() {
   const onClickEmailAuth = async () => {
     if (!email) {
       showModal("이메일을 입력해주세요.");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      showModal("이메일 형식을 확인해주세요.");
+      return;
     }
 
     const res = await axios("http://localhost:3000/mail/send-mail");
