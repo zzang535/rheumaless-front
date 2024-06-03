@@ -17,7 +17,7 @@ function Home() {
           className="w-1/2 text-xl p-2 bg-white hover:bg-slate-200"
           onClick={navigateToLogin}
         >
-          로그인 페이지로 이동
+          로그인
         </button>
         <button
           className="w-1/2 text-xl p-2 bg-white hover:bg-slate-200"
