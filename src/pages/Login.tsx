@@ -7,7 +7,7 @@ function Login() {
       <Header title="로그인" />
       <ContentLayout>
         <div className="mb-4 mt-4">
-          <div className="mb-1">이메일 입력하세요.</div>
+          <div className="mb-1">이메일</div>
           <input className="border-2 w-full h-10" />
         </div>
         <div className="mb-4">
