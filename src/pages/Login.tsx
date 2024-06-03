@@ -15,7 +15,7 @@ function Login() {
           <input className="border-2 w-full h-10" />
         </div>
         <button className="w-full text-xl p-2 bg-white hover:bg-slate-200 border border-black">
-          로그인
+          로그인 하세요
         </button>
       </ContentLayout>
     </>
